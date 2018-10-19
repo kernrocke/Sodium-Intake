@@ -39,12 +39,12 @@ set linesize 250
 global date	"181018"		//date program is run in YYMMDD format, change everytime the file is run
 							// For example "910103" would be January 03, 1991
 							
-		global directory 	"FILE PATH"
-		global do			"$(directory)\Do"
-		global logs			"$(directory)\Logs"
-		global data			"$(directory)\Data"
-		global images		"$(directory)\Graphs"
-		global excel		"$(directory)\Excel"
+		global directory 	"C:\Users\Rock\Desktop\Bitbucket\Sodium-Intake"
+		global do			"$C:\Users\Rock\Desktop\Bitbucket\Sodium-Intake\Do files"
+		global logs			"$C:\Users\Rock\Desktop\Bitbucket\Sodium-Intake\Log files"
+		global data			"$C:\Users\Rock\Desktop\Bitbucket\Sodium-Intake\Data"
+		global images		"$C:\Users\Rock\Desktop\Bitbucket\Sodium-Intake\Graphs"
+		global excel		"$C:\Users\Rock\Desktop\Bitbucket\Sodium-Intake\Excel"
 
 /* NOTE
  Within the Data folder, you will need a folder called "orginal" and one called 
@@ -59,16 +59,13 @@ global date	"181018"		//date program is run in YYMMDD format, change everytime t
 //Data house keeping tasks
 
 //Opening log file
-log using "FILE PATH", text replace
+log using "C:\Users\Rock\Desktop\Bitbucket\Sodium-Intake\Log files\sodium_prep_00", text replace
 
 //Directory
-cd "FILE PATH"
+cd "C:\Users\Rock\Desktop\Bitbucket\Sodium-Intake\Data\Orginal"
 
 //Open dataset
-use "\dataset.dta", clear
-
-//Opening log file
-log using "FILE PATH", text replace
+use "Project_Salt_v3.dta", clear
 
 *-------------------------------------------------------------------------------
 
