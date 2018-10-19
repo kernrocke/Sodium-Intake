@@ -2,12 +2,12 @@ cls
 *	============================================================================
 *					The University of the West Indies
 *
-*	Title:			name.do
-*	Created Date:	dd/mm/yyyy
+*	Title:			sodium_template.do
+*	Created Date:	15/06/2016
 *	Author:			Kern Rocke
-*	Dataset:		datasetname.dta
-*	Purpose:		Purpose of the do.file
-*	Last modfied:	dd/mm/yyyy
+*	Dataset:		Project_Salt_v3.dta
+*	Purpose:		Data Management and Data cleaning
+*	Last modfied:	18/10/2018
 *	
 *	============================================================================
 
