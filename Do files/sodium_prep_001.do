@@ -58,6 +58,12 @@ order PID Sex Age race MStatus Edu fam_disease per_disease sodium_day calories_d
 
 sort PID Sex Age
 
+***Removing previous estimated Sodium Intake variables
+drop beer1- Salt1
+drop sodium sodium_day
+
 ***Saving the dataset
 save "C:\Users\Rock\Dropbox\C_1\Consultations\Projects\Dietary Sodium Study\Data\Salt Data\Project_Salt_v4.dta", replace
 
+//Closing log file
+log close
