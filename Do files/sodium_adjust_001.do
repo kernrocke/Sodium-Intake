@@ -132,7 +132,7 @@ regress sodium_day calories_day i.Sex Age, vce(robust)
 predict res, residuals
 
 *Create new variable for adjusted sodium variable
-gen adjus_sodium= sodium_day - res
+gen adjus_sodium= sodium_day + res
 
 *Apply ceilings and foundation criteria [500 mg for foundation and 8000 mg for ceiling]
 recode adjus_sodium (min/500=500) (8000/max)
