@@ -144,3 +144,8 @@ histogram adjus_sodium, normal
 sum sodium_day adjus_sodium
 mean sodium_dau adjus_sodium
 
+***Saving the dataset
+save "C:\Users\Rock\Dropbox\C_1\Consultations\Projects\Dietary Sodium Study\Data\Salt Data\Project_Salt_v5.dta", replace
+
+//Closing log file
+log close
